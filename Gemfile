@@ -28,10 +28,14 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem "tabs_on_rails"
+gem 'devise'
+gem 'httparty'
 gem 'rufus-scheduler'
 gem 'sinatra', require: false
 gem 'sidekiq'
-gem 'RailsRRDTool'
+# When an uncaught exception occurs, Airbrake will POST the relevant data to the Airbrake server specified in your environment.
+gem 'airbrake'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
