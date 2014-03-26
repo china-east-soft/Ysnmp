@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @rule.name %>
+</p>
+
+<p>
+  <strong>Frequency:</strong>
+  <%= @rule.frequency %>
+</p>
+
+<p>
+  <strong>Method:</strong>
+  <%= @rule.method %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @rule.data %>
+</p>
+
+<%= link_to 'Edit', edit_rule_path(@rule) %> |
+<%= link_to 'Back', rules_path %>

@@ -1,0 +1,34 @@
+
+<h1>Listing rules</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Frequency</th>
+      <th>Method</th>
+      <th>Data</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rules.each do |rule| %>
+      <tr>
+        <td><%= rule.name %></td>
+        <td><%= rule.frequency %></td>
+        <td><%= rule.method %></td>
+        <td><%= rule.data %></td>
+        <td><%= link_to 'Show', rule %></td>
+        <td><%= link_to 'Edit', edit_rule_path(rule) %></td>
+        <td><%= link_to 'Destroy', rule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rule', new_rule_path %>

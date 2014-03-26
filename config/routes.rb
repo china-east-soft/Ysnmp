@@ -1,9 +1,16 @@
 Ysnmp::Application.routes.draw do
+
+  devise_for :admins, :controllers => {:registrations => "admin/registrations",
+   :sessions => "admin/sessions" }
+
+  resources :rules
+  resources :checks
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  root to: 'admins#sign_in'
 
   require 'sidekiq/web'
   mount Sidekiq::Web, at: '/sidekiq'

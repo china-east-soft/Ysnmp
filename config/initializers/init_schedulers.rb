@@ -1,1 +1,0 @@
-@@scheduler = Rufus::Scheduler.new

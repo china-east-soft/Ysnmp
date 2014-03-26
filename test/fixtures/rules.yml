@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  frequency: MyString
+  method: MyString
+  data: false
+
+two:
+  name: MyString
+  frequency: MyString
+  method: MyString
+  data: false
